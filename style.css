@@ -91,14 +91,21 @@ figcaption {
 .images-container {
     position: relative;
     display: flex;
-    height: 300px;
+    height: auto;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+    .images-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 
 .our-team {
-    height: 600px;
+    height: auto;
     position: relative;
+    margin: 65px 0px;
 }
 
 .background-container {
@@ -131,7 +138,7 @@ figcaption {
 
 
 footer {
-    padding: 20px;
+    padding: 15px;
 }
 
 
